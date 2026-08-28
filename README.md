@@ -4,7 +4,9 @@ React.js.
 This project allows users to manage their income and expenses, view
 expense summaries, search and filter transactions, and switch between
 light and dark modes.
+## 🚀 Live Demo
 
+👉 [View Expense Tracker Live](https://nimra13045.github.io/expense-tracker/)
 🚀 Features
 💰 Add and display user income
 
