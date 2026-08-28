@@ -1,0 +1,314 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+
+
+/* Light Mode */
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+}
+.app h1,
+.app h2,
+.app h3,
+.app h4,
+.app h5,
+.app h6,
+.app p,
+.app label,
+.app span {
+  color: black;
+}
+
+.app #transaction-control input,
+.app #transaction-control select,
+.app #Add_expense input,
+.app #Add_expense select,
+.app #Add_expense textarea
+{
+  background-color:white;
+  color: #333;
+  border-color: #555;
+}
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+.dark-app {
+  background-color: #222;
+  color: white;
+  min-height: 100vh;
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.dark-app .summary-card {
+  background-color: #333;
+  color: white;
+}
+
+.dark-app #table1 th {
+  background-color: #333;
+  color: white;
+}
+
+.dark-app #table1 td {
+  color: white;
+  border-color: #555;
+}
+
+.dark-app hr {
+  border-color: #555;
+}
+
+.dark-app #Add_expense {
+  border-color: #555;
+}
+
+.dark-app #transaction-control input,
+.dark-app #transaction-control select,
+.dark-app #Add_expense input,
+.dark-app #Add_expense select,
+.dark-app #Add_expense textarea
+{
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+.dark-app h1,
+.dark-app h2,
+.dark-app h3,
+.dark-app h4,
+.dark-app h5,
+.dark-app h6,
+.dark-app p,
+.dark-app label,
+.dark-app span {
+  color: white;
+}
+.dark-app #Add_expense input::placeholder,
+.dark-app #Add_expense textarea::placeholder {
+  color: #aaa;
+}
+
+.dark-app #transaction-control input::placeholder {
+  color: #aaa;
+}
+.summary-img {
+  width: 100%;
+  max-width: 350px;
+  height: 310px;
+  display: block;
+  margin: 20px auto;
+ 
+}
+/* --------------------------------------------------- */
+
+#table1{
+  width: 100%;
+   border-collapse: collapse;
+}
+#table1 th,
+#table1 td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#table1 th {
+  background-color: #f1f3f5;
+
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+section {
+  margin: 30px 0;
+}
+.expense_area{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#Add_expense{
+  padding-left: 30px;
+  border-right: 1px solid #ddd;
+}
+
+#Add_expense input,
+ #Add_expense select{
+  padding: 10px;
+}
+#add_summary{
+   padding-left: 30px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+margin: 0;
+}
+.header-actions{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+.btn_style2{
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(157, 211, 103);
+  color: darkolivegreen;
+
+}
+#btn_style3{
+   border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(212, 84, 84);
+  color: white; 
+}
+#btn_style4{
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: darkolivegreen;
+  color:white; 
+}
+.btn-style {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.summary{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#transaction-control {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+#transaction-control div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#transaction-control input,
+#transaction-control select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+#heading1{
+  margin: 12px 15px;
+}
+.table-container{
+  width: 100%;
+  overflow-x: auto;
+}
+#Add_expense input,
+#Add_expense select,
+#Add_expense textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  
+}
+
+
+#img1 {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+.summary{
+  grid-template-columns: 1fr;
+}
+.expense_area{
+  grid-template-columns: 1fr;
+}
+#Add_expense{
+  border-right: none;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+} 
+ #transaction-control {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  #img1 {
+    width: 150px;
+  }
+
+  .summary-img {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 480px) {
+
+  #img1 {
+    width: 120px;
+  }
+
+  .summary-img {
+    width: 90%;
+    max-width: 240px;
+  }
+
+  header {
+    gap: 10px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .btn-style {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
